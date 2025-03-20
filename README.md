@@ -22,8 +22,16 @@ A hosted [Hugging Face space](https://huggingface.co/spaces/sesame/csm-1b) is al
 
 ### Setup
 
-```bash
-git clone git@github.com:SesameAILabs/csm.git
+```Windows/Bash
+
+git clone https://github.com:SesameAILabs/csm.git
+cd csm
+Powershell
+py -3.10 -m venv venv
+.venv/bin/activate.ps1
+pip install -r requirements.txt
+
+git clone https://github.com:SesameAILabs/csm.git
 cd csm
 python3.10 -m venv .venv
 source .venv/bin/activate
