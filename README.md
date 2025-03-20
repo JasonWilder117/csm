@@ -32,13 +32,14 @@ pip install -r requirements.txt
 # Disable lazy compilation in Mimi
 export NO_TORCH_COMPILE=1
 
+#python lazy compilation in Triton-windows
+# Disable Triton compilation
+os.environ["NO_TORCH_COMPILE"] = "1"
+
+
 # You will need access to CSM-1B and Llama-3.2-1B
 huggingface-cli login
 ```
-
-### Windows Setup
-
-The `triton` package cannot be installed in Windows. Instead use `pip install triton-windows`.
 
 ## Usage
 
